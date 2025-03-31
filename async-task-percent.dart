@@ -4,7 +4,6 @@ import 'dart:io';
 
 
 int i = 0;
-int left = 0;
 // print(Process.runSync("clear", [], runInShell: true).stdout); // clear the console in Linux/OS X - Use cls instead of clear for windows purpose.
 
 
@@ -15,10 +14,7 @@ Future<String> task1() async {
     int count = 10190;
     for (var i = 0; i < count; i++) {
         if (z % 5 == 0) {
-            int percent = (100 * i / count).toInt();
-            print("T1 : " + percent.toStringAsFixed(0) + " %");
-            left = 100 - percent;
-            print('*' * percent + ' ' * left);
+            print("T1 : " + (100 * i / 19940).toStringAsFixed(2) + " %");
             z = 0;
         }else {
             z++;
@@ -35,10 +31,7 @@ Future<String> task2() async {
     int count = 16940;
     for (var i = 0; i < count; i++) {
         if (z % 5 == 0) {
-            int percent = (100 * i / count).toInt();
-            print("T2 : " + percent.toStringAsFixed(0) + " %");
-            left = 100 - percent;
-            print('*' * percent + ' ' * left);
+            print("T2 : " + (100 * i / 16940).toStringAsFixed(2) + " %");
             z = 0;
         }else {
             z++;
@@ -55,10 +48,7 @@ Future<String> task3() async {
     int count = 17940;
     for (var i = 0; i < count; i++) {
         if (z % 5 == 0) {
-            int percent = (100 * i / count).toInt();
-            print("T3 : " + percent.toStringAsFixed(0) + " %");
-            left = 100 - percent;
-            print('*' * percent + ' ' * left);
+            print("T3 : " + (100 * i / 17940).toStringAsFixed(2) + " %");
             z = 0;
         }else {
             z++;
@@ -75,10 +65,7 @@ Future<String> task4() async {
     int count = 13940;
     for (var i = 0; i < count; i++) {
         if (z % 5 == 0) {
-            int percent = (100 * i / count).toInt();
-            print("T4 : " + percent.toStringAsFixed(0) + " %");
-            left = 100 - percent;
-            print('*' * percent + ' ' * left);
+            print("T4 : " + (100 * i / 13940).toStringAsFixed(2) + " %");
             z = 0;
         }else {
             z++;

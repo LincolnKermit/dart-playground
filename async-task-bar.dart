@@ -11,9 +11,10 @@ int i = 0;
 Future<String> task1() async {
     Stopwatch stopwatch = new Stopwatch()..start();
     int z = 0;
-    for (var i = 0; i < 19940; i++) {
+    int count = 10190;
+    for (var i = 0; i < count; i++) {
         if (z % 5 == 0) {
-            print("T1 : " + (100 * i / 19940).toString() + " %");
+            print("T1 : " + (100 * i / 19940).toStringAsFixed(2) + " %");
             z = 0;
         }else {
             z++;
@@ -27,9 +28,10 @@ Future<String> task1() async {
 Future<String> task2() async {
     Stopwatch stopwatch = new Stopwatch()..start();
     int z = 0;
-    for (var i = 0; i < 16940; i++) {
+    int count = 16940;
+    for (var i = 0; i < count; i++) {
         if (z % 5 == 0) {
-            print("T3 : " + (100 * i / 16940).toString() + " %");
+            print("T2 : " + (100 * i / 16940).toStringAsFixed(2) + " %");
             z = 0;
         }else {
             z++;
@@ -43,9 +45,10 @@ Future<String> task2() async {
 Future<String> task3() async {
     Stopwatch stopwatch = new Stopwatch()..start();
     int z = 0;
-    for (var i = 0; i < 17940; i++) {
+    int count = 17940;
+    for (var i = 0; i < count; i++) {
         if (z % 5 == 0) {
-            print("T4 : " + (100 * i / 17940).toString() + " %");
+            print("T3 : " + (100 * i / 17940).toStringAsFixed(2) + " %");
             z = 0;
         }else {
             z++;
@@ -59,9 +62,10 @@ Future<String> task3() async {
 Future<String> task4() async {
     Stopwatch stopwatch = new Stopwatch()..start();
     int z = 0;
-    for (var i = 0; i < 13940; i++) {
+    int count = 13940;
+    for (var i = 0; i < count; i++) {
         if (z % 5 == 0) {
-            print("T2 : " + (100 * i / 13940).toString() + " %");
+            print("T4 : " + (100 * i / 13940).toStringAsFixed(2) + " %");
             z = 0;
         }else {
             z++;
